@@ -23,7 +23,7 @@ const secondoUser = new User("Pierluigi", "Ambrogio", 40, "Venezia");
 console.log(secondoUser);
 
 const terzoUser = new User("Simone", "Ambrogio", 40, "Milano");
-console.log(secondoUser);
+console.log(terzoUser);
 
 console.log(User.isSameAuthorStatic(primoUser, secondoUser));
 console.log(User.isSameAuthorStatic(secondoUser, terzoUser));
