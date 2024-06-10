@@ -35,13 +35,14 @@ form.onsubmit = function (event) {
 
   petList.appendChild(listItem);
 
-  pets.forEach((pet) => {
+  for (let i = 0; i < pets.length; i++) {
+    const pet = pets[i];
     if (pet !== newPet && Pet.isSameAuthorStatic(pet, newPet)) {
       console.log(
         ` ${newPet.petName} e ${pet.petName} hanno lo stesso padrone : ${ownerName}`
       );
     }
-  });
+  }
 
   form.reset();
 };
